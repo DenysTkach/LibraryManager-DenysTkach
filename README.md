@@ -36,7 +36,7 @@ LibraryManager is a simple Windows Forms application for managing a small librar
  │ ├── Services/ # Infrastructure logic 
  │ └── DatabaseService.cs # Database initialization 
  │ ├── Program.cs # Application entry point 
- └── README.md # Project documentation (this file) ``` </pre>
+   └── README.md # Project documentation (this file) ``` </pre>
 
 ---
 

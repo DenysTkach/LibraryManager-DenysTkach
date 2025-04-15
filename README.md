@@ -20,3 +20,26 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 ![image](https://github.com/user-attachments/assets/02a5cb4f-1629-4b00-ac19-fcd3b81a7ec1)
 
 
+---
+
+## 🧩 Main Features
+
+- View, add, delete, and edit:
+  - 📘 Books
+  - 👨‍🎨 Authors
+  - 🧍 Readers
+- Automatic database saving when editing rows (`RowValidated`)
+- Manual table refresh via the **Refresh** button
+- Dialog forms with input validation (e.g. numeric-only year field)
+- Book-to-author and book-to-reader linking
+- Book borrowing with timestamp
+
+---
+
+## ▶️ How to Run
+
+1. Clone the project:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/LibraryManager.git
+

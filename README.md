@@ -8,7 +8,7 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 ## 🔧 Technologies Used
 
 - Language: **C#**
-- GUI: **Windows Forms (.NET 6/8)**
+- GUI: **Windows Forms (.NET 8)**
 - Database: **SQLite** via `Microsoft.Data.Sqlite`
 - IDE: **Visual Studio 2022**
 - Version Control: **Git + GitHub**

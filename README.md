@@ -36,10 +36,8 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 
 ---
 
-## ▶️ How to Run
+##🗃️ Database Schema
 
-1. Clone the project:
+![image](https://github.com/user-attachments/assets/02234f3e-aada-4824-b1e8-ed2522d25542)
 
-```bash
-git clone https://github.com/YOUR_USERNAME/LibraryManager.git
 

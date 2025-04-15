@@ -1,19 +1,21 @@
 # LibraryManager
-# 📚 LibraryManager — Учёт книг в библиотеке
+# 📚 LibraryManager — Book Management System for a Library
 
-Проект реализует простую систему управления библиотекой с графическим интерфейсом на Windows Forms и использованием базы данных SQLite. Программа позволяет учитывать книги, авторов и читателей, выдавать книги, редактировать данные, а также автоматически сохранять изменения при редактировании таблиц.
+LibraryManager is a simple Windows Forms application for managing a small library using a local SQLite database. It allows users to manage books, authors, and readers, assign books to readers, and automatically saves all changes made in tables.
 
 ---
 
-## 🔧 Технологии
+## 🔧 Technologies Used
 
-- Язык: **C#**
+- Language: **C#**
 - GUI: **Windows Forms (.NET 6/8)**
-- База данных: **SQLite** через `Microsoft.Data.Sqlite`
+- Database: **SQLite** via `Microsoft.Data.Sqlite`
 - IDE: **Visual Studio 2022**
-- Контроль версий: **Git + GitHub**
+- Version Control: **Git + GitHub**
 
 ---
 
-## 📦 Структура проекта
+## 📦 Project Structure
+
+
 

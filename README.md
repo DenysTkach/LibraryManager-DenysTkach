@@ -36,8 +36,59 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 
 ---
 
-##🗃️ Database Schema
+## 🗃️ Database Schema
 
 ![image](https://github.com/user-attachments/assets/02234f3e-aada-4824-b1e8-ed2522d25542)
 
+---
+
+## 🖼️ User Interface
+
+The application consists of four main forms:
+
+### 🏠 MainForm
+
+- Serves as the main menu of the application.
+- Includes buttons to open:
+  - **Books Form**
+  - **Authors Form**
+  - **Readers Form**
+- Displays a table of all books with their titles, authors, borrowers, and borrowed dates.
+- Includes a **Refresh** button to reload data from the database.
+
+### 📘 BooksForm
+
+- Allows adding, editing, and deleting book records.
+- Provides:
+  - `TextBox` for book title
+  - `TextBox` for publication year
+  - `ComboBox` to select the author
+  - `ComboBox` to assign the book to a reader (optional)
+- Books are displayed in a `DataGridView`
+- Supports direct row editing with automatic saving
+
+### 👨‍🎨 AuthorsForm
+
+- Manages authors in the library
+- Provides:
+  - `TextBox` for full name
+  - `TextBox` for country
+  - `TextBox` for birth year
+- Authors are displayed in a `DataGridView`
+- Inline editing is supported (auto-save on row validation)
+
+### 🧍 ReadersForm
+
+- Manages readers (people who borrow books)
+- Provides:
+  - `TextBox` for full name
+  - `TextBox` for contact information
+  - `DateTimePicker` for registration date
+- Readers are displayed in a `DataGridView`
+- Supports adding and editing reader information
+
+All forms feature:
+- Clean, responsive layout
+- Input validation and user-friendly warnings
+- Automatic database synchronization on row changes
 

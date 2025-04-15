@@ -36,9 +36,61 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 
 ---
 
+
 ## 🗃️ Database Schema
 
-![image](https://github.com/user-attachments/assets/02234f3e-aada-4824-b1e8-ed2522d25542)
+The application uses a local SQLite database named `library.db`, which is automatically created on the first launch. It contains three main tables with foreign key relationships:
+
+---
+
+### 📘 Books
+
+Stores information about books and their current lending status.
+
+| Column         | Type     | Description                             |
+|----------------|----------|-----------------------------------------|
+| `Id`           | INTEGER  | Primary key (autoincrement)             |
+| `Title`        | TEXT     | Book title                              |
+| `Year`         | INTEGER  | Year of publication                     |
+| `AuthorId`     | INTEGER  | Foreign key → `Authors(Id)`             |
+| `ReaderId`     | INTEGER  | Foreign key → `Readers(Id)` (nullable)  |
+| `BorrowedDate` | TEXT     | Date when the book was borrowed (nullable, ISO 8601 format) |
+
+---
+
+### 👨‍🎨 Authors
+
+Stores data about authors.
+
+| Column       | Type     | Description                      |
+|--------------|----------|----------------------------------|
+| `Id`         | INTEGER  | Primary key (autoincrement)      |
+| `FullName`   | TEXT     | Author's full name               |
+| `Country`    | TEXT     | Country of origin (optional)     |
+| `BirthYear`  | INTEGER  | Year of birth (optional)         |
+
+---
+
+### 🧍 Readers
+
+Stores data about library readers (borrowers).
+
+| Column        | Type     | Description                        |
+|---------------|----------|------------------------------------|
+| `Id`          | INTEGER  | Primary key (autoincrement)        |
+| `FullName`    | TEXT     | Reader's full name                 |
+| `Contact`     | TEXT     | Contact information (optional)     |
+| `Registered`  | TEXT     | Date of registration (ISO format)  |
+
+---
+
+### 🔗 Relationships
+
+- Each **Book** is linked to **one Author** via `AuthorId`.
+- Each **Book** may optionally be linked to a **Reader** via `ReaderId`.
+- `BorrowedDate` is only set if the book is currently borrowed.
+
+All foreign keys are enforced by SQLite using `FOREIGN KEY` constraints.
 
 ---
 

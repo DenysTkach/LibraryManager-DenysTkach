@@ -17,5 +17,5 @@ LibraryManager is a simple Windows Forms application for managing a small librar
 
 ## 📦 Project Structure
 
-
+LibraryManager/ ├── Models/ # Book, Author, Reader classes ├── Forms/ # GUI Forms: BooksForm, AuthorsForm, ReadersForm, MainForm ├── Services/ # DatabaseService.cs ├── Program.cs # Entry point ├── library.db # SQLite database (created on first launch) └── README.md # Project documentation
 

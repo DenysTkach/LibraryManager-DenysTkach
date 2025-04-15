@@ -3,7 +3,7 @@
 
 LibraryManager is a simple Windows Forms application for managing a small library using a local SQLite database. It allows users to manage books, authors, and readers, assign books to readers, and automatically saves all changes made in tables.
 
----
+--- 
 
 ## 🔧 Technologies Used
 

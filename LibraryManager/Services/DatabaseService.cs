@@ -41,14 +41,15 @@ namespace LibraryManager.Services
 
             CREATE TABLE Books (
                 Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                Title TEXT,
+                Title TEXT NOT NULL,
                 Year INTEGER,
-                AuthorId INTEGER,
+                AuthorId INTEGER NULL,
                 ReaderId INTEGER,
                 BorrowedDate TEXT,
-                FOREIGN KEY (AuthorId) REFERENCES Authors(Id),
+                FOREIGN KEY (AuthorId) REFERENCES Authors(Id) ON DELETE SET NULL,
                 FOREIGN KEY (ReaderId) REFERENCES Readers(Id)
             );
+
             ";
                 cmd.ExecuteNonQuery();
             }

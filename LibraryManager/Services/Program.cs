@@ -1,4 +1,7 @@
-namespace LibraryManager.Services
+using LibraryManager.Services;
+
+
+namespace LibraryManager
 {
     internal static class Program
     {
@@ -8,13 +11,16 @@ namespace LibraryManager.Services
         [STAThread]
         static void Main()
         {
+
+            DatabaseService.InitializeDatabase(); // Initialize the database
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
 
 
-            DatabaseService.InitializeDatabase(); // Initialize the database
+            
         }
     }
 }
